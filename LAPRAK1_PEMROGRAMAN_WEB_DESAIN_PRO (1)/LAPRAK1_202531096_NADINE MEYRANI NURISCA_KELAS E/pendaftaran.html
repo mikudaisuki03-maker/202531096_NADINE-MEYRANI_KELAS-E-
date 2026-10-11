@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum - Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="topbar">
+            <a class="brand" href="index.html" style="text-decoration:none">
+                <span class="brand-mark"><img src="Logo multi.png" alt="Logo Laboratorium Multimedia"></span>
+                <span>LABORATORIUM MULTIMEDIA</span>
+            </a>
+            <nav class="nav-links" aria-label="Navigasi utama">
+                <a href="index.html">Beranda</a>
+                <a class="active" href="pendaftaran.html">Pendaftaran</a>
+            </nav>
+        </div>
+        <div class="hero">
+            <div>
+                <span class="eyebrow">✦ Formulir praktikan</span>
+                <h1>Mulai perjalanan<br>belajarmu di sini.</h1>
+                <p>Lengkapi informasi berikut dengan benar. Formulir ini merupakan simulasi antarmuka untuk praktikum HTML.</p>
+            </div>
+            <div class="hero-panel">
+                <div class="big-number">02<span style="color:white">.</span></div>
+                <h3>Data Pendaftaran</h3>
+                <p>Isian menggunakan berbagai tipe input HTML, pilihan tunggal, kotak centang, dan area teks.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="card">
+            <div class="form-intro">
+                <div class="form-icon">✎</div>
+                <div>
+                    <div class="section-kicker">Form pendaftaran</div>
+                    <h2 style="margin:4px 0 6px">Form Pendaftaran Praktikan</h2>
+                    <p class="lead" style="margin-bottom:0">Isi data di bawah ini untuk melengkapi simulasi pendaftaran.</p>
+                </div>
+            </div>
+
+            <form action="" method="post">
+                <table class="form-table">
+                    <tr>
+                        <td><label for="nama">Nama Lengkap</label></td>
+                        <td>: <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password</label></td>
+                        <td>: <input type="password" id="pass" name="pass" placeholder="Buat password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nim">NIM</label></td>
+                        <td>: <input type="number" id="nim" name="nim" placeholder="Masukkan NIM"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tgl">Tanggal Lahir</label></td>
+                        <td>: <input type="date" id="tgl" name="tgl"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:
+                            <div class="choice-group">
+                                <label for="laki"><input type="radio" id="laki" name="jk" value="L"> Laki-Laki</label>
+                                <label for="perempuan"><input type="radio" id="perempuan" name="jk" value="P"> Perempuan</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Minat bidang</td>
+                        <td>:
+                            <div class="choice-group">
+                                <label for="web"><input type="checkbox" id="web" name="minat" value="web"> Web</label>
+                                <label for="network"><input type="checkbox" id="network" name="minat" value="network"> Jaringan</label>
+                                <label for="design"><input type="checkbox" id="design" name="minat" value="design"> Design/Modeling</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="prodi">Program Studi</label></td>
+                        <td>:
+                            <select id="prodi" name="prodi">
+                                <option value="IF">S1 Teknik Informatika</option>
+                                <option value="SI">S1 Sistem Informasi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="alasan">Alasan Mendaftar</label></td>
+                        <td>: <textarea id="alasan" name="alasan" rows="3" cols="20" placeholder="Tuliskan alasan kamu..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="actions">
+                                <button class="btn btn-primary" type="submit">Kirim Formulir ↗</button>
+                                <button class="btn btn-secondary" type="reset">Reset</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <p class="helper">Catatan: formulir ini belum terhubung ke server, sehingga data tidak disimpan.</p>
+        </section>
+    </main>
+
+    <footer>
+        <strong>Laboratorium Multimedia</strong><br>
+        <span>&copy; 2026 Nama_NIM · Laporan Praktikum Pemrograman Web</span>
+    </footer>
+</body>
+</html>
